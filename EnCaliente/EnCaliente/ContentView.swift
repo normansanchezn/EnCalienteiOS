@@ -9,8 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(alignment: .leading) {
+            Text("This is my fris app in iOS")
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            
+            HStack {
+                Text("Hola este es uno nuevo")
+                    .font(.subheadline)
+                Spacer()
+                Text("Otro texto")
+                    .font(.subheadline)
+            }
+        }
+        .padding()
     }
 }
 
